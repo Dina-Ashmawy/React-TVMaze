@@ -6,7 +6,7 @@ const SeasonCard: React.FC<{ season: Season; showId: string }> = ({
   season,
   showId,
 }) => (
-  <SeasonItem bgImage={season.image?.original || ''}>
+  <SeasonItem bgImage={season.image?.medium || ''}>
     <SeasonInfo>
       <h3>Season {season.number}</h3>
       <p>Episodes: {season.episodeOrder}</p>

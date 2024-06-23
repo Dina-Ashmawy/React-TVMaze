@@ -29,7 +29,7 @@ const EpisodeCard: React.FC<EpisodeCardProps> = ({
   return (
     <StyledCard>
       <StyledImage
-        src={episode.image?.original}
+        src={episode.image?.medium}
         alt={`Episode ${episode.number}`}
       />
       <StyledInfo>

@@ -11,7 +11,7 @@ export const StyledContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 16px;
-
+width:auto;
   @media (min-width: ${breakpoints.medium}) {
     padding: 24px;
   }

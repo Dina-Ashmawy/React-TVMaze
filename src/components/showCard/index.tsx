@@ -39,7 +39,7 @@ const ShowCard: React.FC<ShowCardProps> = ({ show }) => {
   return (
     <StyledCardContainer>
       <StyledLink to={`/shows/${id}/seasons`}>
-        <StyledImage src={image?.original} alt={name} />
+        <StyledImage src={image?.medium} alt={name} />
         <StyledTitle>{name}</StyledTitle>
         <StyledInfo>Genres: {genres?.join(', ')}</StyledInfo>
         <StyledInfo>Year: {premiered}</StyledInfo>

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darkPurple, defaultFontFamily, grayDarker } from './css-vars';
+import { breakpoints, darkPurple, defaultFontFamily, grayDarker } from './css-vars';
 
 const MessageBase = styled.p`
   font-weight: bold;
@@ -20,12 +20,17 @@ export const StyledLoadingMessage = styled(MessageBase)`
 
 export const StyledPageTitle = styled.h1`
   font-family: ${defaultFontFamily};
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: ${darkPurple};
   text-align: center;
+
+
+  @media (min-width: ${breakpoints.medium}) {
+    font-size: 28px;
+  }
 `;
 
 export const StyledListContainer = styled.div`

@@ -53,7 +53,7 @@ const EpisodesPage: React.FC = () => {
 
   return (
     <>
-      <StyledPageTitle>Episodes Information</StyledPageTitle>
+      <StyledPageTitle>Episodes</StyledPageTitle>
       <TimeZoneSelector onChange={handleTimeZoneChange} />
       <StyledListContainer>
         {filteredEpisodes?.map((episode: Episode) => (

@@ -16,17 +16,15 @@ export const StyledCardContainer = styled.div`
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
   width: 100%;
   max-width: 300px;
 `;
 
 export const StyledImage = styled.img`
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  overflow: hidden;
+  max-width: 200px; 
+  max-height: 200px;
 `;
 
 export const StyledContentWrapper = styled.div`
@@ -41,6 +39,7 @@ export const StyledTitle = styled.h2`
   color: ${grayDark};
   font-size: 20px;
   font-family: ${defaultFontFamily};
+  text-align: center;
 `;
 
 export const StyledInfo = styled.p`
@@ -48,6 +47,7 @@ export const StyledInfo = styled.p`
   font-family: ${defaultFontFamily};
   font-size: 14px;
   margin-bottom: 10px;
+  text-align: center;
 `;
 
 export const StyledButton = styled.button`
@@ -62,4 +62,7 @@ export const StyledButton = styled.button`
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
