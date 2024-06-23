@@ -47,3 +47,9 @@ This project is a React application that allows users to browse TV shows, view t
    npm install
 3. **Run the app:**
    npm run dev
+
+
+## Screenshots
+We have included screenshots of the application to help you understand its functionality and appearance. You can find these screenshots in the following directory:
+
+[app/screenshots](./screenshots)
