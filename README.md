@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# TV Show Episodes Information React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application that allows users to browse TV shows, view their episodes and seasons, mark favorites, and more. It utilizes the TVmaze API for fetching show data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Homepage:**
+  - Displays a list of favorite TV shows.
+  - Allows searching across the TVmaze database.
+  - Paginates through a list of TV shows.
+  
+- **Selected Show Seasons Page:**
+  - Lists all seasons of a selected TV show.
+  
+- **Selected Show Season Episodes Page:**
+  - Lists episodes for a selected season of a TV show.
 
-## Expanding the ESLint configuration
+- **Favorites Management:**
+  - Users can mark or unmark shows as favorites.
+  - Favorite shows are remembered between sessions.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Responsive Design:**
+  - Supports mobile displays with a minimum width of 320 pixels.
 
-- Configure the top-level `parserOptions` property like this:
+- **Additional Features:**
+  - Time zone selector for displaying episode dates.
+  - Last 5 search queries accessible in the search box.
+  - Notifications for adding or removing favorites.
+  - Eye-catching design.
+  - unit testing
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Tech Stack
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Framework:** React-ts
+- **State Management:** Redux Toolkit
+- **Data Fetching:** RTK Query
+- **Styling:** Styled Components
+- **Testing:** Jest (unit tests)
+
+## Installation and Usage
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+2. **Install dependencies:**
+   npm install
+3. **Run the app:**
+   npm run dev
