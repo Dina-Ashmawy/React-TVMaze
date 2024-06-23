@@ -13,7 +13,7 @@ const FavoriteShows: React.FC = () => {
 
   return (
     <StyledContainer>
-      {favorites.length > 0 ? (
+      {favorites?.length > 0 ? (
         <>
           <StyledTitle>My Favorite Shows</StyledTitle>
           <StyledList>

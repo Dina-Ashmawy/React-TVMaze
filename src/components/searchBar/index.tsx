@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getSessionItem, setSessionItem } from '../../utils/sessionUtils';
+import {
+  getSessionItem,
+  setSessionItem,
+} from '../../utils/sessionStorageUtils';
 import {
   StyledInput,
   StyledSearchBarWrapper,

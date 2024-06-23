@@ -7,6 +7,7 @@ const MessageBase = styled.p`
   text-align: center;
   margin: 0;
   font-family: ${defaultFontFamily};
+  padding: 100px;
 `;
 
 export const StyledErrorMessage = styled(MessageBase)`

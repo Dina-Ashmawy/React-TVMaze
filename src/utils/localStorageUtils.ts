@@ -13,10 +13,6 @@ export const setLocalStorageItem = (key: string, value: string[]) => {
  * @returns {string[] | null} The parsed value from localStorage, or null if not found or on error.
  */
 export const getLocalStorageItem = (key: string): string[] | null => {
-  try {
-    const item = localStorage.getItem(key);
-    return item ? (JSON.parse(item) as string[]) : null;
-  } catch (error) {
-    return null;
-  }
+  const item = localStorage.getItem(key);
+  return item ? (JSON.parse(item) as string[]) : null;
 };

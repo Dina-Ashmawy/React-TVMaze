@@ -17,7 +17,7 @@ const EpisodesPage: React.FC = () => {
     seasonNumber: string;
   }>();
   const {
-    data: episodes = [],
+    data: episodes,
     isLoading,
     error,
   } = useFetchEpisodesQuery(showId ?? '1');
@@ -32,31 +32,31 @@ const EpisodesPage: React.FC = () => {
   };
 
   const handleTimeZoneChange = (value: string) => {
-    setTimeZone(value); // Update timeZone state
+    setTimeZone(value);
   };
-
-  const filteredEpisodes = episodes.filter(
-    (episode) => episode.season === Number(seasonNumber),
-  );
 
   if (isLoading) {
     return <StyledLoadingMessage>Loading...</StyledLoadingMessage>;
   }
 
-  if (error) {
+  if (error || !episodes) {
     return (
       <StyledErrorMessage>
-        There is an error in fetching episodes
+        'There is an error in fetching episodes'
       </StyledErrorMessage>
     );
   }
+
+  const filteredEpisodes = episodes
+    ? episodes.filter((episode) => episode.season === Number(seasonNumber))
+    : [];
 
   return (
     <>
       <StyledPageTitle>Episodes Information</StyledPageTitle>
       <TimeZoneSelector onChange={handleTimeZoneChange} />
       <StyledListContainer>
-        {filteredEpisodes.map((episode: Episode) => (
+        {filteredEpisodes?.map((episode: Episode) => (
           <EpisodeCard
             key={episode.id}
             episode={episode}
