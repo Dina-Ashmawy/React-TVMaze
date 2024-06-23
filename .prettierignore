@@ -1,0 +1,5 @@
+/coverage
+/dist
+/cypress/reports
+package.json
+package-lock.json
