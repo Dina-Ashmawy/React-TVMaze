@@ -41,7 +41,7 @@ This project is a React application that allows users to browse TV shows, view t
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/Dina-Ashmawy/React-TVMaze.git
    cd your-repo
 2. **Install dependencies:**
    npm install
