@@ -27,7 +27,7 @@ This project is a React application that allows users to browse TV shows, view t
   - Last 5 search queries accessible in the search box.
   - Notifications for adding or removing favorites.
   - Eye-catching design.
-  - unit testing
+  - Unit testing
 
 ## Tech Stack
 
@@ -52,6 +52,6 @@ This project is a React application that allows users to browse TV shows, view t
 
 
 ## Screenshots
-We have included screenshots of the application to help you understand its functionality and appearance. You can find these screenshots in the following directory:
+I have included screenshots of the application to help you understand its functionality and appearance. You can find these screenshots in the following directory:
 
 [app/screenshots](./screenshots)
