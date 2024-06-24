@@ -11,7 +11,7 @@ describe('Header Component', () => {
         <Header />
       </MemoryRouter>,
     );
-    expect(getByText('TVMaze')).toBeInTheDocument();
+    expect(getByText('TVMaze Explorer')).toBeInTheDocument();
   });
 
   it('renders link to home correctly', () => {
@@ -20,7 +20,7 @@ describe('Header Component', () => {
         <Header />
       </MemoryRouter>,
     );
-    const linkElement = getByRole('link', { name: 'TVMaze' });
+    const linkElement = getByRole('link', { name: 'TVMaze Explorer' });
     expect(linkElement).toHaveAttribute('href', '/');
   });
 });

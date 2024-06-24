@@ -10,7 +10,7 @@ const Header: React.FC = () => {
     <StyledContainer>
       <StyledContent>
         <StyledLink to="/">
-          <StyledAppName>TVMaze</StyledAppName>
+          <StyledAppName>TVMaze Explorer</StyledAppName>
         </StyledLink>
       </StyledContent>
     </StyledContainer>

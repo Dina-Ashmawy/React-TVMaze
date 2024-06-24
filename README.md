@@ -1,4 +1,4 @@
-# TV Show Episodes Information React App
+# TVMaze Explorer React App
 
 This project is a React application that allows users to browse TV shows, view their episodes and seasons, mark favorites, and more. It utilizes the TVmaze API for fetching show data.
 
