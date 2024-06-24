@@ -31,11 +31,13 @@ This project is a React application that allows users to browse TV shows, view t
 
 ## Tech Stack
 
-- **Framework:** React-ts
+- **Framework:** React with TypeScript
 - **State Management:** Redux Toolkit
 - **Data Fetching:** RTK Query
 - **Styling:** Styled Components
 - **Testing:** Jest (unit tests)
+- **Build Tool:** Vite (for development)
+
 
 ## Installation and Usage
 
