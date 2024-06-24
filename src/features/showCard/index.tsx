@@ -9,7 +9,7 @@ import {
 } from './styled';
 import useFavorites from '../../hooks/useFavorites';
 import { Show } from '../../interfaces';
-import Notification from '../../components/notification'; // Import Notification component
+import Notification from '../../features/notification'; // Import Notification component
 
 interface ShowCardProps {
   show: Show;

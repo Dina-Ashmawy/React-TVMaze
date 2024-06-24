@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useFetchEpisodesQuery } from '../../services/tvMazeService';
+import { useFetchEpisodesQuery } from '../services/tvMazeService';
 import {
   StyledErrorMessage,
   StyledListContainer,
   StyledLoadingMessage,
   StyledPageTitle,
-} from '../../gloablStyles';
-import { Episode } from '../../interfaces';
-import TimeZoneSelector from '../../components/timeZoneSelector';
-import EpisodeCard from '../../components/episodeCard';
+} from '../gloablStyles';
+import { Episode } from '../interfaces';
+import TimeZoneSelector from '../features/timeZoneSelector';
+import EpisodeCard from '../features/episodeCard';
 
 const EpisodesPage: React.FC = () => {
   const { showId, seasonNumber } = useParams<{

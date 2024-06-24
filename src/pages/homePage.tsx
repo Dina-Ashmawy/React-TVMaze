@@ -1,11 +1,11 @@
 import React from 'react';
-import SearchBar from '../../components/searchBar';
-import ShowList from '../../components/showList';
-import { usePagination } from '../../hooks/usePagination';
+import SearchBar from '../features/searchBar';
+import ShowList from '../features/showList';
+import { usePagination } from '../hooks/usePagination';
 import { useSelector } from 'react-redux';
-import FavoriteShows from '../../components/favoriteShows';
-import PaginationControls from '../../components/paginationControls';
-import { selectFilteredShows } from '../../redux/showsSlice';
+import FavoriteShows from '../features/favoriteShows';
+import PaginationControls from '../features/paginationControls';
+import { selectFilteredShows } from '../redux/showsSlice';
 
 const HomePage: React.FC = () => {
   const filteredShows = useSelector(selectFilteredShows);

@@ -1,14 +1,14 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import SeasonCard from '../../components/seasonCard';
-import { Season } from '../../interfaces';
+import SeasonCard from '../features/seasonCard';
+import { Season } from '../interfaces';
 import {
   StyledErrorMessage,
   StyledListContainer,
   StyledLoadingMessage,
   StyledPageTitle,
-} from '../../gloablStyles';
-import { useFetchSeasonsQuery } from '../../services/tvMazeService';
+} from '../gloablStyles';
+import { useFetchSeasonsQuery } from '../services/tvMazeService';
 
 const SeasonsPage: React.FC = () => {
   const { showId } = useParams<{ showId: string }>();
