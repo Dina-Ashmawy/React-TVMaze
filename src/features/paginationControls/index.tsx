@@ -18,7 +18,7 @@ const PaginationControls: React.FC<PaginationControlsProps> = ({
   }, [currentLocalPage]);
 
   const renderPageNumbers = () => {
-    const maxPageButtons = 10; // Maximum number of page buttons to show
+    const maxPageButtons = 10;
     const halfPageRange = Math.floor(maxPageButtons / 2);
 
     let startPage = Math.max(1, currentLocalPage - halfPageRange);
@@ -36,7 +36,7 @@ const PaginationControls: React.FC<PaginationControlsProps> = ({
       newPages.push(
         <StyledPageButton
           key={i}
-          onClick={() => onPageChange(i)} // Call onPageChange with i
+          onClick={() => onPageChange(i)}
           active={i === currentLocalPage}
         >
           {i}

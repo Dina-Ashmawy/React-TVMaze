@@ -2,9 +2,9 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, fireEvent, screen, waitFor } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Provider } from 'react-redux'; // Import Provider from react-redux
-import configureStore from 'redux-mock-store'; // Import configureStore for mocking Redux store
-import ShowCard from '.'; // Adjust the import path as necessary
+import { Provider } from 'react-redux';
+import configureStore from 'redux-mock-store';
+import ShowCard from '.';
 import { mockSingleShow } from '../../../mock/test.mock';
 
 const mockStore = configureStore([]);

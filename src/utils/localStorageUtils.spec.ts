@@ -1,5 +1,3 @@
-// localStorageUtils.spec.ts
-
 import { getLocalStorageItem, setLocalStorageItem } from './localStorageUtils';
 
 describe('LocalStorageItem', () => {

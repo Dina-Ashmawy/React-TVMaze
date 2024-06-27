@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { selectFavoriteShows } from '../../redux/showsSlice'; // Adjust path as necessary
+import { selectFavoriteShows } from '../../redux/showsSlice';
 import {
   StyledContainer,
   StyledList,
