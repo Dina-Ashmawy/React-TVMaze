@@ -12,6 +12,7 @@ export const StyledContainer = styled.header`
   height: 64px;
   position: sticky;
   z-index: 1;
+  top: 0;
   background-color: ${grayLighter};
 
   @media (min-width: ${breakpoints.medium}) {

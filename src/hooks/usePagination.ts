@@ -7,8 +7,11 @@ export const usePagination = () => {
   const [apiPage, setApiPage] = useState<number>(0);
   const [currentLocalPage, setCurrentLocalPage] = useState<number>(1);
 
-  const { data: showsData, refetch: refetchShows } =
-    useFetchShowsQuery(apiPage);
+  const {
+    data: showsData,
+    refetch: refetchShows,
+    isLoading,
+  } = useFetchShowsQuery(apiPage);
 
   useEffect(() => {
     refetchShows();
@@ -23,10 +26,10 @@ export const usePagination = () => {
   };
 
   const getLocalPageItems = (localPageNumber: number): Show[] => {
-    const startIndex = (localPageNumber - 1) % 10;
+    const localPageIndex = (localPageNumber - 1) % 10;
+    const startIndex = localPageIndex * ITEMS_PER_LOCAL_PAGE;
     const endIndex = startIndex + ITEMS_PER_LOCAL_PAGE;
     const localPageItems = showsData?.slice(startIndex, endIndex);
-
     return localPageItems ?? [];
   };
 
@@ -34,5 +37,6 @@ export const usePagination = () => {
     currentLocalPage,
     handlePageClick,
     getLocalPageItems,
+    isLoading,
   };
 };
